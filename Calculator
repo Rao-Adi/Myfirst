@@ -1,0 +1,15 @@
+# Calculator
+print("Enter + - * / to perform calculation operation ")
+op=input()
+print("Enter first number ")
+num1=int(input())
+print("Enter second number ")
+num2 = int(input())
+if op == '+':
+    print("Sum of ", num1 ," and ", num2 , " is =", num1 + num2)
+elif op =='-':
+    print("Subtraction of ", num1 ," and ", num2 ," is =", num1 - num2)
+elif op == '*':
+    print("Multiplication of ", num1 ," and ", num2 ," is =", num1 * num2)
+elif op == '/' :
+    print("Division of ", num1 ," and ", num2 ," is =", num1 / num2)
