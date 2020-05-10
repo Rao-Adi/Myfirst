@@ -1,0 +1,37 @@
+import time
+import pygame
+#import plyer
+from plyer import notification
+
+def Drink_Water_Notification():
+    notification.notify(
+        title = "**Please Drink Water Now !!",
+        message = "It's important to Drink 3.7 liters water in a day...",
+        app_icon = f"E:\PythonClasses\PythonProgramms\GlassWater.ico",
+        timeout = 10
+    )
+    time.sleep(60*50) # Drink water in after every 50 Minutes
+
+def Eyes_BlinkExercise_Notification():
+    notification.notify(
+        title = "**Eyes blink Exercise!!",
+        message = "It's important for eyes to do Exercise when using Computer continuesly...",
+        app_icon = f"E:\PythonClasses\PythonProgramms\Eye.ico",
+        timeout = 10
+    )
+    time.sleep(60*30) # after 30 minutes do Eyes Exercise
+
+def Do_Some_Exercise():
+    notification.notify(
+        title ="Go for some walk!!",
+        message = "Conitnuesly sitting will make you fatty, you should do some walk...",
+        app_icon = f"E:\PythonClasses\PythonProgramms\Exercise.ico",
+        timeout = 10
+
+    )
+    time.sleep(60*60)
+if __name__ == "__main__":
+    while True:
+        Drink_Water_Notification()
+        Eyes_BlinkExercise_Notification()
+        Do_Some_Exercise()
